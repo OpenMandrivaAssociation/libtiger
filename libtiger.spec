@@ -1,6 +1,6 @@
 %define name libtiger
-%define version 0.3.3
-%define release %mkrel 2
+%define version 0.3.4
+%define release %mkrel 1
 %define major 5
 %define libname %mklibname tiger %major
 %define develname %mklibname -d tiger
