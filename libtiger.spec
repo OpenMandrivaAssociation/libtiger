@@ -19,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-devel
 BuildRequires: libkate-devel
 BuildRequires: pango-devel
+BuildRequires: pkgconfig(pangocairo)
 BuildRequires: doxygen
 
 %description
@@ -78,7 +79,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc ChangeLog installed-docs/*
 %_libdir/libtiger.so
-%_libdir/libtiger.la
 %_libdir/pkgconfig/tiger.pc
 %_includedir/tiger
 
