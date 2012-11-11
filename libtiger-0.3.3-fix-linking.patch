@@ -1,0 +1,11 @@
+--- libtiger-0.3.3/Makefile.am~	2009-04-12 13:53:19.000000000 +0200
++++ libtiger-0.3.3/Makefile.am	2010-01-07 09:19:45.000000000 +0100
+@@ -34,7 +34,7 @@
+ 
+ lib_libtiger_la_CFLAGS=@CWARNFLAGS_FULL@ @CFLAGS_FORTIFY_SOURCE@ @CFLAGS_DEBUG@ @CFLAGS_PROFILE@ \
+                        @PANGOCAIRO_CFLAGS@ @KATE_CFLAGS@ @PTHREAD_CFLAGS@
+-lib_libtiger_la_LIBADD=@PANGOCAIRO_LIBS@ @KATE_LIBS@ @PTHREAD_LIBS@
++lib_libtiger_la_LIBADD=@PANGOCAIRO_LIBS@ @KATE_LIBS@ @PTHREAD_LIBS@ -lm
+ lib_libtiger_la_LDFLAGS=-version-info @LIBTIGER_SHARED_VERSION@ -no-undefined
+ 
+ am__tar = ${AMTAR} chof - --owner=0 --group=0 --exclude=CVS --exclude=.cvsignore "$$tardir"
