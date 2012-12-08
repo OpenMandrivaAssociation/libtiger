@@ -1,0 +1,32 @@
+diff -urN libtiger-0.3.4/configure.ac libtiger-0.3.4-patched/configure.ac
+--- libtiger-0.3.4/configure.ac	2010-12-26 05:02:56.000000000 +1000
++++ libtiger-0.3.4-patched/configure.ac	2012-08-18 01:27:34.017074043 +1100
+@@ -27,6 +27,7 @@
+ LIBTIGER_SHARED_VERSION="5:2:0"
+ 
+ AC_PROG_CC_C_O
++AM_PROG_AR
+ AC_PROG_LIBTOOL
+ AC_PROG_GREP
+ AC_PROG_NM
+diff -urN libtiger-0.3.4/doc/Makefile.am libtiger-0.3.4-patched/doc/Makefile.am
+--- libtiger-0.3.4/doc/Makefile.am	2010-12-26 05:09:06.000000000 +1000
++++ libtiger-0.3.4-patched/doc/Makefile.am	2012-08-18 01:43:26.064073981 +1100
+@@ -1,4 +1,4 @@
+-LIBTOOLFLAGS=--silent
++AM_LIBTOOLFLAGS=--silent
+ 
+ # dependency to get doc to be built
+ noinst_DATA = .doc-dummy-target
+diff -urN libtiger-0.3.4/Makefile.am libtiger-0.3.4-patched/Makefile.am
+--- libtiger-0.3.4/Makefile.am	2010-12-25 07:22:01.000000000 +1000
++++ libtiger-0.3.4-patched/Makefile.am	2012-08-18 01:39:09.289074052 +1100
+@@ -11,7 +11,7 @@
+ tigerpc_DATA=misc/pkgconfig/tiger.pc
+ noinst_DATA=misc/pkgconfig/tiger-uninstalled.pc
+ 
+-LIBTOOLFLAGS=--silent
++AM_LIBTOOLFLAGS=--silent
+ 
+ AM_CPPFLAGS=-I $(top_srcdir)/src -I $(top_srcdir)/include
+ 
