@@ -5,7 +5,7 @@
 Summary:	Text rendering library for Kate streams
 Name:		libtiger
 Version:	0.3.4
-Release:	11
+Release:	12
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://code.google.com/p/libtiger/
