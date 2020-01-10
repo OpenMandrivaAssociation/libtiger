@@ -39,7 +39,7 @@ libtiger is a rendering library for Kate streams using Pango and Cairo.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 autoreconf -fi
 
 %build
