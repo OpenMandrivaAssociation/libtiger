@@ -8,7 +8,7 @@ Version:	0.3.4
 Release:	14
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://code.google.com/p/libtiger/
+Url:		https://code.google.com/p/libtiger/
 Source0:	http://libtiger.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		libtiger-0.3.3-fix-linking.patch
 Patch1:		libtiger-0.3.4-automake1.12.patch
