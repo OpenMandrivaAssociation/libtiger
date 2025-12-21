@@ -12,6 +12,11 @@ Url:		https://code.google.com/p/libtiger/
 Source0:	http://libtiger.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		libtiger-0.3.3-fix-linking.patch
 Patch1:		libtiger-0.3.4-automake1.12.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	doxygen
 BuildRequires:	pkgconfig(kate)
 BuildRequires:	pkgconfig(pango)
